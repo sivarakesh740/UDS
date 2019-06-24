@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<unistd.h>
+main()
+{ 
+	if(fork()==0)
+	{
+		//system("ls");
+                execl("/bin/ls","ls",NULL);
+		while(1);
+	}
+	else
+	{
+                execl("/bin/pwd","ls",NULL);
+		//system("pwd");
+		while(1);
+	}
+}

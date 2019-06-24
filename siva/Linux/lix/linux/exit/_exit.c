@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+void fun1();
+void fun2();
+main()
+{
+	printf("before fun..\n");
+	atexit(fun1);
+	printf("after fun1..\n");
+	atexit(fun2);
+	printf("main func...\n");
+	//exit(0);
+        printf("after fun2..\n");
+    //    _exit(0);
+}
+void fun1()
+{
+	printf("in fun1 body..\n");
+}
+void fun2()
+{
+	printf("in fun2 body..\n");
+}

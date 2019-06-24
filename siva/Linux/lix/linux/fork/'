@@ -1,0 +1,17 @@
+#include<stdio.h>
+void fun(int i);
+#define sum i>0
+main()
+{
+
+	fun(100);
+	return;
+}
+void fun(int i)
+{
+	sum
+	printf("%d ",i);
+        fun(--i);	
+	
+	
+}

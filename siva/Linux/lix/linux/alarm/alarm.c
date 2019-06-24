@@ -1,0 +1,10 @@
+#include<stdio.h>
+main()
+{
+ printf("hello..\n");
+ alarm(10);
+ alarm(1);
+ alarm(2);
+ printf("hi..\n");
+ while(1);
+}
